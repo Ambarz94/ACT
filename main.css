@@ -1,0 +1,290 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	font: bold 14px Tahoma;
+	color: #000000;
+}
+
+#big-wrapper{
+	width: auto;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex: 1;
+}
+#top-header{
+	/* display: -webkit-box; */
+	/* -webkit-box-orient: horizontal; */
+	/* border: 1px solid black; */
+	overflow: hidden;
+	width: auto;
+	height: 80px;
+}
+#top-header #top-logo{
+	float:left;
+}
+#top-header #top-menu{
+	float:right;
+}
+#top-logo{
+	/* background-color: yellow; */
+	/* border: 1px solid black; */
+	-webkit-box-flex: 1;
+	height: 80px;
+}
+#top-logo img{
+	padding: 10px 30px 10px 30px;
+}
+#top-menu{
+	width: auto;
+	height:80px;
+}
+#mommy{
+	/* border: 1px solid green; */
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+#mommy .nav-relawan{
+	padding: 5px 30px 5px 30px;
+	margin: 25px 5px 25px 5px;
+	border: 2px solid #8dcb3b;
+	border-radius: 25px;
+	line-height: 80px;
+	color: #232323;
+}
+#mommy .nav-relawan:hover{
+	color: #FFFFFF;
+	background-color: #8dcb3b;
+}
+#mommy .nav-donasi{
+	padding: 5px 30px 5px 30px;
+	margin: 25px 5px 25px 5px;
+	border: 2px solid #f59220;
+	background-color: #f59220;
+	border-radius: 25px;
+	line-height: 80px;
+	color: #FFFFFF;
+}
+#mommy .nav-bahasa{
+	margin: 25px 15px 25px 15px;
+	line-height: 80px;
+	color: #6F6F6F;
+}
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 6px;
+  transition: 0.4s;
+}
+ul{
+	padding: 0px;
+	list-style-type: none;
+	height: 80px;
+}
+#mommy .hamburger-menu .btn-menu{
+	background-color: transparent;
+	border: none;
+	padding-top:25px;
+	outline: none;
+	cursor: pointer;
+}
+#mommy .hamburger-menu .btn-menu:hover div{
+	
+	background-color: #d98f36;
+}
+#layar{
+	background-image: url("bg_menu.jpg");
+	background-repeat: no-repeat;
+	width: 100%; /* vw/% */
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: opx;
+	background-attachment: fixed;
+	background-size:cover;
+	display: none;
+}
+.flag-icon-id{
+	background-image: url("id.svg");
+}
+.flag-icon-en{
+	background-image: url("images/us.svg");
+}
+
+.flag-icon{
+	background-size: contain;
+	background-position: 50%;
+	background-repeat:no-repeat;
+	position: relative;
+	display: inline-block;
+	width: 15px;
+	line-height: 15px;
+}
+.flag-icon:before{
+	content: "\00a0";
+}
+.content-bg{
+	
+	
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+	background-attachment: fixed;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+#content-article{
+	border: 2px solid orange;
+	-webkit-box-flex: 1;
+	max-width:600px;
+	position:absolute;
+	width: 100%;
+	height: 400px;
+}
+#content-article article h1{
+	position: absolute;
+	color: white;
+	left: 64px;
+	top: 168px;
+	font-size: 45px;
+	font-weight: bold;
+}
+#content-article article p{
+	position: absolute;
+	color: white;
+	left: 64px;
+	top: 228px;
+	font-size: 20px;
+}
+#content-donasi{
+	background-color: white;
+	border-radius: 50px;
+	margin: 20px;
+	width:385px;
+	height:100%;
+	padding: 20px;
+	float: right;
+}
+#content-donasi h4{
+	text-align: center;
+	font: bold 30px Open Sans;
+	margin-bottom: 10px;
+	
+}
+#content-donasi .content-garis{
+	width: 100%;
+	height: 5px;
+	background-color: #6eb314;
+	margin: 10px 0 10px 0;
+}
+#content-donasi .donasi-langsung{
+	text-align: center;
+	font: bold 14px Open Sans;
+}
+#content-donasi .donasi-langsung .ada{
+	margin-bottom: 10px;
+}
+#content-donasi .pilih-donasi .ada2{
+	padding-top: 10px;
+	text-align: center;
+}
+#content-donasi .donasi-langsung button{
+	border: 2px solid orange;
+	padding: 5px 20px;
+	width: 100%;
+	background: transparent;
+	border-radius: 50px;
+	font: bold 14px Open Sans;
+}
+#content-donasi .pilih-donasi .ab{
+	float: left;
+}
+#content-donasi .pilih-donasi button{
+	border: 2px solid orange;
+	padding: 5px 20px;
+	margin-top: 10px;
+	width: 100%;
+	background: transparent;
+	border-radius: 50px;
+	font: bold 14px Open Sans;
+}
+#content-donasi .pilih-donasi .ab{
+	margin-bottom: 10px;
+	width: 50%;
+}
+#content-donasi .input-group .form-rounded{
+	
+}
+#content-donasi .input-group{
+	display: inline-block;
+	max-width: 100%;
+	width: 100%;
+}
+#content-donasi .input-group input{
+border: 2px solid orange;
+	font: bold 14px Open Sans;
+    margin: 0 0 5px 0;
+    max-width: 100%;
+	padding: 5px 20px ;
+    resize: none;
+  box-sizing: border-box;
+	width: 100%;
+	border-radius: 50px;
+}
+#content-donasi .label-group label{
+	font: bold 14px Open Sans;
+}
+#content-donasi .label-group{
+	text-align: center;
+}
+#content-donasi .donasi-nominal button{
+	text-align: center;
+	border: 2px solid orange;
+	padding: 5px 20px;
+	width: 100%;
+	background: transparent;
+	border-radius: 50px;
+	font: bold 14px Open Sans;
+	margin: 20px 0 20px 0;
+}
+
+#big-wrapper .w3-display-left, .w3-display-right{
+	position:absolute;
+	top: 50%;
+	padding: 16px;
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: transparent;
+	
+}
+#big-wrapper .w3-display-right{
+	right: 0px;
+	
+}
+@media screen and (max-width: 500px) {
+	#top-header #logo{
+		float: none;
+		padding: 10px;
+	}
+	#top-header #top-menu #kid1, #kid2, #kid4{
+		display: none;
+	}
+	#top-header #top-menu .hamburger-menu{
+		display: block;
+		padding: 0px 50px 0px 0px;
+	}
+}
+
