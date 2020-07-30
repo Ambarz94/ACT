@@ -2,13 +2,21 @@
 	margin: 0px;
 	padding: 0px;
 }
-
+body{
+	    font-family: "Open Sans", sans-serif !important;
+}
 a{
 	text-decoration: none;
 	font: bold 14px Tahoma;
 	color: #000000;
 }
 
+.text-white{
+	color: white;
+}
+.text-white a{
+	color: white;
+}
 #big-wrapper{
 	width: auto;
 	display: -webkit-box;
@@ -42,12 +50,12 @@ a{
 	width: auto;
 	height:80px;
 }
-#mommy{
+#menu-nav{
 	/* border: 1px solid green; */
 	display: -webkit-box;
 	-webkit-box-orient: horizontal;
 }
-#mommy .nav-relawan{
+#menu-nav .nav-relawan{
 	padding: 5px 30px 5px 30px;
 	margin: 25px 5px 25px 5px;
 	border: 2px solid #8dcb3b;
@@ -55,11 +63,11 @@ a{
 	line-height: 80px;
 	color: #232323;
 }
-#mommy .nav-relawan:hover{
+#menu-nav .nav-relawan:hover{
 	color: #FFFFFF;
 	background-color: #8dcb3b;
 }
-#mommy .nav-donasi{
+#menu-nav .nav-donasi{
 	padding: 5px 30px 5px 30px;
 	margin: 25px 5px 25px 5px;
 	border: 2px solid #f59220;
@@ -68,7 +76,7 @@ a{
 	line-height: 80px;
 	color: #FFFFFF;
 }
-#mommy .nav-bahasa{
+#menu-nav .nav-bahasa{
 	margin: 25px 15px 25px 15px;
 	line-height: 80px;
 	color: #6F6F6F;
@@ -85,14 +93,14 @@ ul{
 	list-style-type: none;
 	height: 80px;
 }
-#mommy .hamburger-menu .btn-menu{
+#menu-nav .hamburger-menu .btn-menu{
 	background-color: transparent;
 	border: none;
 	padding-top:25px;
 	outline: none;
 	cursor: pointer;
 }
-#mommy .hamburger-menu .btn-menu:hover div{
+#menu-nav .hamburger-menu .btn-menu:hover div{
 	
 	background-color: #d98f36;
 }
@@ -274,12 +282,81 @@ border: 2px solid orange;
 	right: 0px;
 	
 }
+footer{
+	background-color: #5dda47;
+	width: auto;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+/* footer div{ */
+	/* background-color: red; */
+	/* width: auto; */
+	/* height: auto; */
+/* } */
+/* footer div nav{ */
+	/* background-color: yellow; */
+	/* width: auto; */
+	/* height: 100%; */
+/* } */
+/* footer div nav ul{ */
+	/* background-color: yellow; */
+	/* width: auto; */
+	/* height: 100%; */
+/* } */
+.padding-40px-bottom{
+	position: relative;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+.heih{
+	height: 100%;
+}
+.heih li{
+	float: left;
+	height: 100%;
+}
+footer li{
+	width: 50%;
+	height: auto;
+}
+.flot{
+	float: left;
+	width: 50%;
+	
+}
+.flat{
+	float: left;
+	width: 50%;
+}
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 100px;
+	margin-right: auto;
+}
+.font-weight-600px{
+	font-weight: 600;
+}
+.font-medium{
+	font-size: 16px;
+    line-height: 23px;
+}
+.alt-font{
+	/* font-family: "Open Sans", sans-serif !important; */
+}
+.bor{
+	margin-bottom: 5px;
+}
 @media screen and (max-width: 500px) {
 	#top-header #logo{
 		float: none;
 		padding: 10px;
 	}
 	#top-header #top-menu #kid1, #kid2, #kid4{
+		display: none;
+	}
+	#big-wrapper article{
 		display: none;
 	}
 	#top-header #top-menu .hamburger-menu{
