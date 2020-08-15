@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Project 6</title>
+	<title>Aksi Cepat Tanggap</title>
 	<link rel="stylesheet" href="main.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet" href="abc/bootstrap.min.css"> -->
@@ -21,13 +24,96 @@
 					<li id="menu2"><a class="nav-donasi" href="https://act.id/donasi">Donasi</a></li>
 					<li id="menu3">
 						<div class="hamburger-menu">
-							<a href="index.html">
-								<button class="btn-menu">
+							<!-- <button id="close" > -->
+								<button id="open"  class="btn-menu">
 									<div class="bar1"></div>
 									<div class="bar2"></div>
 									<div class="bar3"></div>
 								</button>
-							</a>
+							<!-- </button> -->
+							
+						</div>
+						<div id="bg-menu">
+							<div class="wrapper-menu">
+								<div class="logo-putih">
+									<a href="https://act.id/">
+										<img src="images/logo_putih_2.svg" width="150">
+									</a>
+									
+								</div>
+								<div class="wrap-close">
+									<button id="close">X</button>
+								</div>
+								<div class="wrap-middle-menu">
+									<div class="middle-menu">
+										<ul class="ggg text-white">
+											<li><a href="https://act.id/">Beranda</a></li>
+											<li><a href="https://act.id/donasi">Donasi</a></li>
+											<li><a href="https://act.id/donasi/konfirmasi">Konfirmasi</a></li>
+											<li><a href="https://act.id/rekening">Rekening</a></li>
+											<li><a href="https://act.id/mitra">Kolaborasi</a></li>
+											<li><a href="https://indonesiadermawan.id/">Indonesia Dermawan</a></li>
+											<li><a href="https://news.act.id/">ACT News</a></li>
+											<li><a href="https://membership.relawan.id/register">Relawan</a></li>
+											<li><a href="https://www.actnews.tv/">ACT TV</a></li>
+											<li><a href="https://act.id/contact_us">Kontak Kami</a></li>
+											<li><a href="https://donation.act.id/">Ruang Donatur</a></li>
+										</ul>
+									</div>
+									<div class="float-left text-white font-20px-size">
+										<div class="margin-15px-bottom text-style-tahoma">
+											Kantor Pusat
+										</div>
+										<p class="margin-15px-bottom text-white">
+											Menara 165, lantai 11,
+											<br>
+											Jl. TB. Simatupang Kav. 1,
+											<br>
+											Cilandak Timur
+											<br>
+											Jakarta Selatan, 12560,
+											<br>
+											Indonesia
+											<br>
+											Phone - +62 21 2940 6565
+											<br>
+											Fax- +62 21 2940 6564,
+											<br>
+											Email - info@act.id
+											<br>
+										</p>
+										<div class="sosmed-icon">
+											<ul class="sosmed-list">
+												<li>
+													<a href="http://www.facebook.com/AksiCepatTanggap">
+														<i class="fa-facebook-f"></i>
+													</a>
+												</li>
+												<li>
+													<a href="https://twitter.com/ACTforHumanity">
+														<i class="fa-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="https://plus.google.com/102448863853876295057">
+														<i class="fa-google-plus-g"></i>
+													</a>
+												</li>
+												<li>
+													<a href="https://www.youtube.com/user/actnewstv">
+														<i class="fa-youtube"></i>
+													</a>
+												</li>
+												<li>
+													<a href="https://www.instagram.com/actforhumanity/">
+														<i class="fa-instagram"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</li>
 					<li id="menu4">
@@ -36,452 +122,446 @@
 					</a>
 					
 					<div class="dropdown-content">
-						<a href="https://act.id/translate/language/english/home"><span class="flag-icon flag-icon-en">
+						<a href="https://act.id/translate/language/english/home">
+						<span class="flag-icon flag-icon-en">
 							</span> English
 						</a>
 						<br>
-						<a href="#">
+						<a href="https://act.id/translate/language/indonesia/home">
 						<span class="flag-icon flag-icon-id">
 							</span> Indonesia
 						</a>
 					</div>
+					
+					
 					</li>
 				</ul>
 			</nav>
 		</div>
-		<div id="layar">
-			<a href="#" id="layar1">ghvh</a>
-		</div>
-		<div class="content-bg" style="background-image: url('banner_Sahabat_UMI.jpg');">
-			<div id="content-article">
-				<article>
-					<h1>SAHABAT UMI</h1>
-					<br>
-					<p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah
-					<br>
-					program yang berfokus untuk membantu ibu-ibu 
-					<br>
-					pelaku usaha mikro yang usahanya tergoncang hebat 
-					<br>
-					akibat perekonomian yang sedang goyah.
-					<br>
-					</p>
-				</article>
-			</div>
+		<!-- <div class="content-bg" style="background-image: url('banner_Sahabat_UMI.jpg');"> -->
+			<!-- <div id="content-article"> -->
+				<!-- <article> -->
+					<!-- <h1>SAHABAT UMI</h1> -->
+					<!-- <br> -->
+					<!-- <p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah -->
+					<!-- <br> -->
+						<!-- program yang berfokus untuk membantu ibu-ibu  -->
+					<!-- <br> -->
+						<!-- pelaku usaha mikro yang usahanya tergoncang hebat  -->
+					<!-- <br> -->
+						<!-- akibat perekonomian yang sedang goyah. -->
+					<!-- <br> -->
+					<!-- </p> -->
+				<!-- </article> -->
+			<!-- </div> -->
 			
-			<div id="content-donasi">
-				<h4>Donasi</h4>
-				<div class="content-garis"></div>
-				<div class="row">
-					<div class="donasi-langsung">
-						<div class="ada">
-						<b>Pilihan Donasi</b>
-						</div>
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+			<!-- <div id="content-donasi"> -->
+				<!-- <h4>Donasi</h4> -->
+				<!-- <div class="content-garis"></div> -->
+				<!-- <div class="row"> -->
+					<!-- <div class="donasi-langsung"> -->
+						<!-- <div class="ada"> -->
+						<!-- <b>Pilihan Donasi</b> -->
+						<!-- </div> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
+					<!-- </div> -->
 					
-					<div class="pilih-donasi">
-						<div class="ada2">
-						<b>Silahkan pilih donasi dahulu</b>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 250.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 1.000.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 500.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 2.500.000</button>
-						</div>
+					<!-- <div class="pilih-donasi"> -->
+						<!-- <div class="ada2"> -->
+						<!-- <b>Silahkan pilih donasi dahulu</b> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 250.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 1.000.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 500.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 2.500.000</button> -->
+						<!-- </div> -->
 						
-					</div>
-					<div class="input-group">
-						<input placeholder="Rp Pilih Donasi Dahulu">
-						</input>
-						
-						
-					</div>
-					<div class="label-group">
-						<label>
-							Tidak ada sub program
-						</label>
+					<!-- </div> -->
+					<!-- <div class="input-group"> -->
+						<!-- <input placeholder="Rp Pilih Donasi Dahulu"> -->
+						<!-- </input> -->
 						
 						
-					</div>
+					<!-- </div> -->
+					<!-- <div class="label-group"> -->
+						<!-- <label> -->
+							<!-- Tidak ada sub program -->
+						<!-- </label> -->
+						
+						
+					<!-- </div> -->
 					
-					<div class="donasi-nominal">
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+					<!-- <div class="donasi-nominal"> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
-				</div>
-			</div>
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
 			
-			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
-		</div>
-		<div class="content-bg" style="background-image: url('banner_Jakarta_Careline.jpg');">
-			<div id="content-article">
-				<article>
-					<h1>SAHABAT UMI</h1>
-					<br>
-					<p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah
-					<br>
-					program yang berfokus untuk membantu ibu-ibu 
-					<br>
-					pelaku usaha mikro yang usahanya tergoncang hebat 
-					<br>
-					akibat perekonomian yang sedang goyah.
-					<br>
-					</p>
-				</article>
-			</div>
+		<!-- </div> -->
+		<!-- <div class="content-bg" style="background-image: url('banner_Jakarta_Careline.jpg');"> -->
+			<!-- <div id="content-article"> -->
+				<!-- <article> -->
+					<!-- <h1>SAHABAT UMI</h1> -->
+					<!-- <br> -->
+					<!-- <p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah -->
+					<!-- <br> -->
+					<!-- program yang berfokus untuk membantu ibu-ibu  -->
+					<!-- <br> -->
+					<!-- pelaku usaha mikro yang usahanya tergoncang hebat  -->
+					<!-- <br> -->
+					<!-- akibat perekonomian yang sedang goyah. -->
+					<!-- <br> -->
+					<!-- </p> -->
+				<!-- </article> -->
+			<!-- </div> -->
 			
-			<div id="content-donasi">
-				<h4>Donasi</h4>
-				<div class="content-garis"></div>
-				<div class="row">
-					<div class="donasi-langsung">
-						<div class="ada">
-						<b>Pilihan Donasi</b>
-						</div>
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+			<!-- <div id="content-donasi"> -->
+				<!-- <h4>Donasi</h4> -->
+				<!-- <div class="content-garis"></div> -->
+				<!-- <div class="row"> -->
+					<!-- <div class="donasi-langsung"> -->
+						<!-- <div class="ada"> -->
+						<!-- <b>Pilihan Donasi</b> -->
+						<!-- </div> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
+					<!-- </div> -->
 					
-					<div class="pilih-donasi">
-						<div class="ada2">
-						<b>Silahkan pilih donasi dahulu</b>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 250.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 1.000.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 500.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 2.500.000</button>
-						</div>
+					<!-- <div class="pilih-donasi"> -->
+						<!-- <div class="ada2"> -->
+						<!-- <b>Silahkan pilih donasi dahulu</b> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 250.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 1.000.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 500.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 2.500.000</button> -->
+						<!-- </div> -->
 						
-					</div>
-					<div class="input-group">
-						<input placeholder="Rp Pilih Donasi Dahulu">
-						</input>
-						
-						
-					</div>
-					<div class="label-group">
-						<label>
-							Tidak ada sub program
-						</label>
+					<!-- </div> -->
+					<!-- <div class="input-group"> -->
+						<!-- <input placeholder="Rp Pilih Donasi Dahulu"> -->
+						<!-- </input> -->
 						
 						
-					</div>
+					<!-- </div> -->
+					<!-- <div class="label-group"> -->
+						<!-- <label> -->
+							<!-- Tidak ada sub program -->
+						<!-- </label> -->
+						
+						
+					<!-- </div> -->
 					
-					<div class="donasi-nominal">
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+					<!-- <div class="donasi-nominal"> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
-				</div>
-			</div>
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
 			
-			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
-		</div>
-		<div class="content-bg" style="background-image: url('banner_Selamatkan_Bangsa.jpg');">
-			<div id="content-article">
-				<article>
-					<h1>SAHABAT UMI</h1>
-					<br>
-					<p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah
-					<br>
-					program yang berfokus untuk membantu ibu-ibu 
-					<br>
-					pelaku usaha mikro yang usahanya tergoncang hebat 
-					<br>
-					akibat perekonomian yang sedang goyah.
-					<br>
-					</p>
-				</article>
-			</div>
+		<!-- </div> -->
+		<!-- <div class="content-bg" style="background-image: url('banner_Selamatkan_Bangsa.jpg');"> -->
+			<!-- <div id="content-article"> -->
+				<!-- <article> -->
+					<!-- <h1>SAHABAT UMI</h1> -->
+					<!-- <br> -->
+					<!-- <p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah -->
+					<!-- <br> -->
+					<!-- program yang berfokus untuk membantu ibu-ibu  -->
+					<!-- <br> -->
+					<!-- pelaku usaha mikro yang usahanya tergoncang hebat  -->
+					<!-- <br> -->
+					<!-- akibat perekonomian yang sedang goyah. -->
+					<!-- <br> -->
+					<!-- </p> -->
+				<!-- </article> -->
+			<!-- </div> -->
 			
-			<div id="content-donasi">
-				<h4>Donasi</h4>
-				<div class="content-garis"></div>
-				<div class="row">
-					<div class="donasi-langsung">
-						<div class="ada">
-						<b>Pilihan Donasi</b>
-						</div>
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+			<!-- <div id="content-donasi"> -->
+				<!-- <h4>Donasi</h4> -->
+				<!-- <div class="content-garis"></div> -->
+				<!-- <div class="row"> -->
+					<!-- <div class="donasi-langsung"> -->
+						<!-- <div class="ada"> -->
+						<!-- <b>Pilihan Donasi</b> -->
+						<!-- </div> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
+					<!-- </div> -->
 					
-					<div class="pilih-donasi">
-						<div class="ada2">
-						<b>Silahkan pilih donasi dahulu</b>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 250.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 1.000.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 500.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 2.500.000</button>
-						</div>
+					<!-- <div class="pilih-donasi"> -->
+						<!-- <div class="ada2"> -->
+						<!-- <b>Silahkan pilih donasi dahulu</b> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 250.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 1.000.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 500.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 2.500.000</button> -->
+						<!-- </div> -->
 						
-					</div>
-					<div class="input-group">
-						<input placeholder="Rp Pilih Donasi Dahulu">
-						</input>
-						
-						
-					</div>
-					<div class="label-group">
-						<label>
-							Tidak ada sub program
-						</label>
+					<!-- </div> -->
+					<!-- <div class="input-group"> -->
+						<!-- <input placeholder="Rp Pilih Donasi Dahulu"> -->
+						<!-- </input> -->
 						
 						
-					</div>
+					<!-- </div> -->
+					<!-- <div class="label-group"> -->
+						<!-- <label> -->
+							<!-- Tidak ada sub program -->
+						<!-- </label> -->
+						
+						
+					<!-- </div> -->
 					
-					<div class="donasi-nominal">
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+					<!-- <div class="donasi-nominal"> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
-				</div>
-			</div>
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
 			
-			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
-		</div>
-		<div class="content-bg" style="background-image: url('content-contributor-2.jpg');">
-			<div id="content-article">
-				<article>
-					<h1>SAHABAT UMI</h1>
-					<br>
-					<p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah
-					<br>
-					program yang berfokus untuk membantu ibu-ibu 
-					<br>
-					pelaku usaha mikro yang usahanya tergoncang hebat 
-					<br>
-					akibat perekonomian yang sedang goyah.
-					<br>
-					</p>
-				</article>
-			</div>
+		<!-- </div> -->
+		<!-- <div class="content-bg" style="background-image: url('content-contributor-2.jpg');"> -->
+			<!-- <div id="content-article"> -->
+				<!-- <article> -->
+					<!-- <h1>SAHABAT UMI</h1> -->
+					<!-- <br> -->
+					<!-- <p>Sahabat Usaha Mikro Indonesia (Sahabat UMI) adalah -->
+					<!-- <br> -->
+					<!-- program yang berfokus untuk membantu ibu-ibu  -->
+					<!-- <br> -->
+					<!-- pelaku usaha mikro yang usahanya tergoncang hebat  -->
+					<!-- <br> -->
+					<!-- akibat perekonomian yang sedang goyah. -->
+					<!-- <br> -->
+					<!-- </p> -->
+				<!-- </article> -->
+			<!-- </div> -->
 			
-			<div id="content-donasi">
-				<h4>Donasi</h4>
-				<div class="content-garis"></div>
-				<div class="row">
-					<div class="donasi-langsung">
-						<div class="ada">
-						<b>Pilihan Donasi</b>
-						</div>
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+			<!-- <div id="content-donasi"> -->
+				<!-- <h4>Donasi</h4> -->
+				<!-- <div class="content-garis"></div> -->
+				<!-- <div class="row"> -->
+					<!-- <div class="donasi-langsung"> -->
+						<!-- <div class="ada"> -->
+						<!-- <b>Pilihan Donasi</b> -->
+						<!-- </div> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
+					<!-- </div> -->
 					
-					<div class="pilih-donasi">
-						<div class="ada2">
-						<b>Silahkan pilih donasi dahulu</b>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 250.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 1.000.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 500.000</button>
-						</div>
-						<div class="ab">
-						<button href="#">Rp 2.500.000</button>
-						</div>
+					<!-- <div class="pilih-donasi"> -->
+						<!-- <div class="ada2"> -->
+						<!-- <b>Silahkan pilih donasi dahulu</b> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 250.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 1.000.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 500.000</button> -->
+						<!-- </div> -->
+						<!-- <div class="ab"> -->
+						<!-- <button href="#">Rp 2.500.000</button> -->
+						<!-- </div> -->
 						
-					</div>
-					<div class="input-group">
-						<input placeholder="Rp Pilih Donasi Dahulu">
-						</input>
-						
-						
-					</div>
-					<div class="label-group">
-						<label>
-							Tidak ada sub program
-						</label>
+					<!-- </div> -->
+					<!-- <div class="input-group"> -->
+						<!-- <input placeholder="Rp Pilih Donasi Dahulu"> -->
+						<!-- </input> -->
 						
 						
-					</div>
+					<!-- </div> -->
+					<!-- <div class="label-group"> -->
+						<!-- <label> -->
+							<!-- Tidak ada sub program -->
+						<!-- </label> -->
+						
+						
+					<!-- </div> -->
 					
-					<div class="donasi-nominal">
-						<div>
-						<button href="#">DONASI LANGSUNG</button>
-						</div>
+					<!-- <div class="donasi-nominal"> -->
+						<!-- <div> -->
+						<!-- <button href="#">DONASI LANGSUNG</button> -->
+						<!-- </div> -->
 						
-					</div>
-				</div>
-			</div>
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
 			
-			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
-		</div>
-		<section class="qqq">
-		<!-- <div class="item-1 bbbbb"><img src="img-3.png" width="500"><div class="aaaaa"><div>avav</div><div>avav</div></div></div> -->
-  <!-- <div class="item-2"><img src="img-3.png" width="500"><div>avav</div></div> -->
-  <!-- <div class="item-3"><img src="img-3.png" width="500"><div>avav</div></div> -->
-			<div class="aaa abd no-padding">
-				<!-- <img src="img-3.png" width="500"> -->
-				<div class="abc">
-					<div class="text-12px">Indonesia</div>
-					<div class="bg-green"></div>
-					<div class="text-white text-align">Selamatkan<br>Bangsa</div>
-					<button>Donasi</button>
-				</div>
-			</div>
-			<div class="aaa abd no-padding1">
-				<!-- <img src="img-3.png" width="500"> -->
-				<div class="abc">
-					<div class="text-12px">Palestina</div>
-					<div class="bg-green"></div>
-					<div class="text-white text-align">Selamatkan<br>Palestina</div>
-					<button>Donasi</button>
-				</div>
-			</div>
-			<div class="aaa abd no-padding2">
-				<!-- <img src="img-3.png" width="500"> -->
-				<div class="abc">
-					<div class="text-12px">Indonesia</div>
-					<div class="bg-green"></div>
-					<div class="text-white text-align">Bersama<br>Bantu<br>Lebanon</div>
-					<button>Donasi</button>
-				</div>
-			</div>
-		</section>
-		<div class="content-bg2" style="background-image: url('content-contributor.jpg');">
-			<div id="content-article2">
-				<div class="padding-20px">
-					<img src="vanila-logo.png">
-				</div>
-					<div class="padding-fff">
-						<a href="https://act.id/kolaborasi/Vanilla-Mendekap-Hangat-Ribuan-Keluarga" class="text-white">
-							Vanilla
-							<br>
-							Mendekap Hangat
-							<br>
-							Ribuan Keluarga
-							<br>
-						</a>
-					</div>
-					<div class="padding-ffff">
-						<p>
-						“Aku menyaksikan sendiri keseharian mereka di
-						<br>
-						musim dingin. Bantuan teman-teman, insya Allah
-						<br>
-						begitu bermanfaat untuk para pengungsi disini.”
-						<br>
-						<br>
-						Terima kasih teman-teman semua.
-						</p>
-					</div>
-			</div>
+		<!-- </div> -->
+		<!-- <section class="qqq"> -->
+			<!-- <div class="aaa abd no-padding"> -->
+				<!-- <div class="abc"> -->
+					<!-- <div class="text-12px">Indonesia</div> -->
+					<!-- <div class="bg-green"></div> -->
+					<!-- <div class="text-white text-align">Selamatkan<br>Bangsa</div> -->
+					<!-- <button>Donasi</button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="aaa abd no-padding1"> -->
+				<!-- <div class="abc"> -->
+					<!-- <div class="text-12px">Palestina</div> -->
+					<!-- <div class="bg-green"></div> -->
+					<!-- <div class="text-white text-align">Selamatkan<br>Palestina</div> -->
+					<!-- <button>Donasi</button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="aaa abd no-padding2"> -->
+				<!-- <div class="abc"> -->
+					<!-- <div class="text-12px">Indonesia</div> -->
+					<!-- <div class="bg-green"></div> -->
+					<!-- <div class="text-white text-align">Bersama<br>Bantu<br>Lebanon</div> -->
+					<!-- <button>Donasi</button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </section> -->
+		<!-- <div class="content-bg2" style="background-image: url('content-contributor.jpg');"> -->
+			<!-- <div id="content-article2"> -->
+				<!-- <div class="padding-20px"> -->
+					<!-- <img src="vanila-logo.png"> -->
+				<!-- </div> -->
+					<!-- <div class="padding-fff"> -->
+						<!-- <a href="https://act.id/kolaborasi/Vanilla-Mendekap-Hangat-Ribuan-Keluarga" class="text-white"> -->
+							<!-- Vanilla -->
+							<!-- <br> -->
+							<!-- Mendekap Hangat -->
+							<!-- <br> -->
+							<!-- Ribuan Keluarga -->
+							<!-- <br> -->
+						<!-- </a> -->
+					<!-- </div> -->
+					<!-- <div class="padding-ffff"> -->
+						<!-- <p> -->
+						<!-- “Aku menyaksikan sendiri keseharian mereka di -->
+						<!-- <br> -->
+						<!-- musim dingin. Bantuan teman-teman, insya Allah -->
+						<!-- <br> -->
+						<!-- begitu bermanfaat untuk para pengungsi disini.” -->
+						<!-- <br> -->
+						<!-- <br> -->
+						<!-- Terima kasih teman-teman semua. -->
+						<!-- </p> -->
+					<!-- </div> -->
+			<!-- </div> -->
 			
 			
-			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
-		</div>
-		<footer class="text-white">
-			<div class="padding-40px-bottom">
-				<div class="container">
-				<div class="flot">
-					<div class="font-weight-600px font-medium">
-						TENTANG KAMI
-					</div>
-					<img class="bor" src="footer-line.png">
-					<ul class="heih">
-						<li><a href="https://act.id/tentang/sejarah" class="font-medium" >Sejarah</a></li>
-						<li><a href="https://news.act.id/" class="font-medium">News</a></li>
-						<li><a href="https://act.id/tentang/visi_misi">Visi Misi</a></li>
-						<li><a href="https://act.id/tentang/manajemen">Manajemen</a></li>
-						<li><a href="https://act.id/tentang/legal">Legal</a></li>
-						<li><a href="https://act.id/contact_us">Hubungi Kami</a></li>
-						<li><a href="https://act.id/mitra">Mitra</a></li>
-						<li><a href="https://act.id/donasi/konfirmasi">Konfirmasi</a></li>
-						<li><a href="https://act.id/rekening">Rekening</a></li>
-						<li><a href="https://act.id/laporan_keuangan">Laporan Keuangan</a></li>
-						<li><a href="https://act.id/sessions/privacy">Privacy</a></li>
-						<li><a href="https://act.id/sessions/term_and_condition">Term and condition</a></li>
-						<li><a href="https://act.id/sessions/faq">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="flat heih">
-					<div class="font-weight-600px font-medium">
-						KANTOR PUSAT
-					</div>
-					<img class="bor" src="footer-line.png">
-					<p>
-						Menara 165, lantai 11,
-						<br>
+		<!-- </div> -->
+		<!-- <footer class="text-white"> -->
+			<!-- <div class="padding-40px-bottom"> -->
+				<!-- <div class="container"> -->
+				<!-- <div class="flot"> -->
+					<!-- <div class="font-weight-600px font-medium"> -->
+						<!-- TENTANG KAMI -->
+					<!-- </div> -->
+					<!-- <img class="bor" src="footer-line.png"> -->
+					<!-- <ul class="heih"> -->
+						<!-- <li><a href="https://act.id/tentang/sejarah" class="font-medium" >Sejarah</a></li> -->
+						<!-- <li><a href="https://news.act.id/" class="font-medium">News</a></li> -->
+						<!-- <li><a href="https://act.id/tentang/visi_misi">Visi Misi</a></li> -->
+						<!-- <li><a href="https://act.id/tentang/manajemen">Manajemen</a></li> -->
+						<!-- <li><a href="https://act.id/tentang/legal">Legal</a></li> -->
+						<!-- <li><a href="https://act.id/contact_us">Hubungi Kami</a></li> -->
+						<!-- <li><a href="https://act.id/mitra">Mitra</a></li> -->
+						<!-- <li><a href="https://act.id/donasi/konfirmasi">Konfirmasi</a></li> -->
+						<!-- <li><a href="https://act.id/rekening">Rekening</a></li> -->
+						<!-- <li><a href="https://act.id/laporan_keuangan">Laporan Keuangan</a></li> -->
+						<!-- <li><a href="https://act.id/sessions/privacy">Privacy</a></li> -->
+						<!-- <li><a href="https://act.id/sessions/term_and_condition">Term and condition</a></li> -->
+						<!-- <li><a href="https://act.id/sessions/faq">FAQ</a></li> -->
+					<!-- </ul> -->
+				<!-- </div> -->
+				<!-- <div class="flat heih"> -->
+					<!-- <div class="font-weight-600px font-medium"> -->
+						<!-- KANTOR PUSAT -->
+					<!-- </div> -->
+					<!-- <img class="bor" src="footer-line.png"> -->
+					<!-- <p> -->
+						<!-- Menara 165, lantai 11, -->
+						<!-- <br> -->
 						
-						Jl. TB. Simatupang Kav. 1, Cilandak Timur
+						<!-- Jl. TB. Simatupang Kav. 1, Cilandak Timur -->
 						
-						<br>
+						<!-- <br> -->
 						
-						Jakarta Selatan, 12560, Indonesia
+						<!-- Jakarta Selatan, 12560, Indonesia -->
 						
-						<br>
+						<!-- <br> -->
 						
-						Ph. +62 21 2940 6565,
+						<!-- Ph. +62 21 2940 6565, -->
 						
-						<br>
+						<!-- <br> -->
 						
-						Fax. +62 21 2940 6564,
+						<!-- Fax. +62 21 2940 6564, -->
 						
-						<br>
+						<!-- <br> -->
 						
-						Email. info@act.id
+						<!-- Email. info@act.id -->
 						
-					</p>
-				</div>
-				</div>
-			</div>
-				<div class="container">
-					Copyright 2019 ACT. All right reserved.
-				</div>
-			</footer>
-		</div>
+					<!-- </p> -->
+				<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+				<!-- <div class="container"> -->
+					<!-- Copyright 2019 ACT. All right reserved. -->
+				<!-- </div> -->
+			<!-- </footer> -->
+		<!-- </div> -->
 		
 			<!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
 			<!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
@@ -525,5 +605,8 @@ function showDivs(n) {
  <!-- z= a.length; -->
  <!-- document.write(z); -->
 </script>
+
+	<script type="text/javascript" src="message.js"></script>
+
 </body>
 </html>
