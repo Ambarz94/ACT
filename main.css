@@ -191,7 +191,7 @@ ul{
 	overflow: hidden;
 }
 .wrapper-menu{
-	padding: 15px 80px 15px 80px;
+	padding: 15px 60px;
 	/* background-color: yellow; */
   box-sizing: border-box;
 	height: 100%;
@@ -238,10 +238,11 @@ ul{
 	/* height: 100%; */
 }
 .text-style-tahoma{
-	font: bold 14px Tahoma;
+	font: bold 17px Tahoma;
 }
 .font-20px-size{
 	width: 50%;
+	margin-left: 5px;
 }
 .margin-15px-bottom{
 	margin-bottom: 25px;
